@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-todolist';
+  title:string = 'angular-todolist';
+  name:string = 'Kuba';
+
+  constructor() {
+    this.changeName("Jakub");
+  }
+
+  changeName(name:string):void {
+    this.name = name;
+  }
 }
